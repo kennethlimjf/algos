@@ -4,7 +4,7 @@ module Algos
   module Sort
     class MergeSort
       def self.sort(x)
-        (x.size <= 1) ? x : merge(sort(x[0, x.size/2]), sort(x[x.size/2, x.size]))
+        (x.size <= 1) ? x : merge(sort(x[0, x.size/2]), sort(x[x.size/2, x.size])) if x && x.instance_of?(Array)
       end
 
       private

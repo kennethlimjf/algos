@@ -32,6 +32,14 @@ describe Algos::Sort::MergeSort do
       sorted_ary = Algos::Sort::MergeSort.sort(unsorted_ary)
       expect(sorted_ary).to eq([])
     end
+
+    it 'returns nil if given nil' do
+      expect( Algos::Sort::MergeSort.sort(nil) ).to be_nil
+    end
+
+    it 'only acts on Array' do
+      expect( Algos::Sort::MergeSort.sort("adsasd") ).to be_nil
+    end
   end
 
 end
