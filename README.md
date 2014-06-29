@@ -1,6 +1,6 @@
 # Algos
 
-TODO: Write a gem description
+This is a library of common algorithms implemented in Ruby language. It contains mergesort.
 
 ## Installation
 
