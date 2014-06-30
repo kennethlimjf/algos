@@ -1,8 +1,21 @@
-require 'algos'
+require 'algos/sort/merge_sort'
 
 describe Algos::Sort::MergeSort do
   
   describe 'sort' do
+
+    it 'sorts an unsorted array into an array using marge sort algorithm' do
+      unsorted_ary = [2,1]
+      sorted_ary = Algos::Sort::MergeSort.sort(unsorted_ary)
+      expect(sorted_ary).to eq([1,2])
+    end
+
+    it 'sorts an unsorted array into an array using marge sort algorithm' do
+      unsorted_ary = [3,2,1]
+      sorted_ary = Algos::Sort::MergeSort.sort(unsorted_ary)
+      expect(sorted_ary).to eq([1,2,3])
+    end
+
     it 'sorts an unsorted array into an array using marge sort algorithm' do
       unsorted_ary = [5,2,1,4,6,7,9,3,8]
       sorted_ary = Algos::Sort::MergeSort.sort(unsorted_ary)
